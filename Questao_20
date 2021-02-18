@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <gc/gc.h>
+#include <time.h>
+
+int main(void){
+    int i;
+    const int size = 50000000;
+    clock_t t, t2;
+
+    t = clock();
+    GC_INIT();
+    for (i = 0; i < size; ++i){
+        int **p = GC_MALLOC(sizeof(int));
+    }
+    t = clock() - t;
+    printf("%f TEMPO(s)", ((float)t)/CLOCKS_PER_SEC);
+
+    t2 = clock();
+    for (i = 0; i < size; ++i){
+        int **q = malloc(sizeof(int));
+    free(q);
+    }
+
+    t2 = clock() - t2;
+    printf("%f TEMPO(s)", ((float)t2)/CLOCKS_PER_SEC);
+    return 0;
+}
