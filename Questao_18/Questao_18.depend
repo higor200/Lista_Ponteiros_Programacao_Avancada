@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1613611957 source:c:\users\tiago\desktop\estudo\ufrn\2020.2\programação avançada\listas\ponteiros\questao_18\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
