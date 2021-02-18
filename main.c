@@ -3,12 +3,16 @@
 
 int main()
 {
-    /*
-    A utilização de ponteiros em linguagem C é uma das características que tornam a linguagem tão flexível e poderosa.
-    Nesse sentido, ponteiro é uma variável que contém um endereço de memória . Assim, dizemos que um ponteiro “aponta”
-    para uma varíável quando contém o endereço da mesma. Uma aplicação seria na área de sistemas embarcados.
+    /*int i=3,j=5;
+    int *p, *q;
+    p = &i;
+    q = &j;
 
+    printf("RESULTADOS: \n");
+    printf("O VALOR DE 'p == &i' eh: %d\n",p);
+    printf("O VALOR DE '*p - *q' eh: %d\n", *p - *q);
+    printf("O VALOR DE '**&p' eh: %d\n",  **&p);
+    printf("O VALOR DE '3 - *p/(*q) + 7' eh: %d\n",  3 - *p/(*q) + 7);*/
 
-*/
     return 0;
 }
